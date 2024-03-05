@@ -185,7 +185,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1144px;
+  min-height: 1144px;
 }
 .home-page__img {
   width: 558px;
