@@ -31,6 +31,16 @@ body {
   font-weight: inherit;
   border: none;
   margin-right: 60px;
+  transition: 200ms transform ease-in-out, 200ms background-color ease-in;
+}
+
+.primary-btn:hover {
+  background-color: #b4838b;
+}
+
+.primary-btn:active {
+  transform: scale(0.9);
+  background-color: #903a49;
 }
 
 .secondary-btn {
@@ -38,6 +48,19 @@ body {
   height: 84px;
   background-color: #00ffff;
   box-shadow: 4px 4px 4px #00000040;
+  transition: 300ms all ease-in-out;
+}
+
+.secondary-btn:hover {
+  transform: scale(1.1);
+  background-color: #65c260;
+  border: 1px solid green;
+}
+
+.secondary-btn:active {
+  transform: scale(0.9);
+  background-color: #357132;
+  border: 1px solid rgb(6, 48, 6);
 }
 
 /* This can be used for img border styling, overwrite the style in a separate css file if needed */
@@ -155,6 +178,10 @@ body {
   cursor: pointer;
 }
 
+.main-nav li:hover {
+  transform: scale(1.2);
+}
+
 /* HOME PAGE */
 
 .header {
@@ -227,4 +254,10 @@ body {
 }
 .footer__social-media .instagram__icon {
   padding-right: 23px;
+}
+.footer__icon {
+  transition: 200ms transform ease-in-out;
+}
+.footer__icon:hover {
+  transform: scale(1.3);
 }
