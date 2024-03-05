@@ -95,3 +95,38 @@ main {
   height: 296.2px;
   margin-left: 8px;
 }
+
+/* FOOTER */
+.footer {
+  height: 94px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-family: Calibri, sans-serif;
+  font-size: 32px;
+  padding-left: 44px;
+}
+.linkedin__icon {
+  padding: 0 26px;
+}
+.facebook__icon {
+  width: 48px;
+}
+.linkedin__icon,
+.instagram__icon {
+  width: 42px;
+}
+
+.instagram__icon {
+  padding-right: 23px;
+}
