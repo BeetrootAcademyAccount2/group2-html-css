@@ -37,16 +37,39 @@ main {
   font-family: "Saira", sans-serif;
 }
 
-.f-s36 {
-  font-size: 36px;
+.ff-italliano {
+  font-family: "Italianno", cursive;
+}
+
+.ff-calibri {
+  font-family: Calibri, sans-serif;
+}
+
+.ff-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+.f-s24 {
+  font-size: 24px;
 }
 
 .f-s32 {
   font-size: 32px;
 }
+.f-s36 {
+  font-size: 36px;
+}
 
-.f-s24 {
-  font-size: 24;
+.f-s40 {
+  font-size: 40px;
+}
+
+.f-s64 {
+  font-size: 64px;
 }
 
 .fw400 {
