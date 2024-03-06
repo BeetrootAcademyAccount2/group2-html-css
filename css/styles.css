@@ -30,7 +30,6 @@ body {
   font-family: inherit;
   font-weight: inherit;
   border: none;
-  margin-right: 60px;
   transition: 200ms transform ease-in-out, 200ms background-color ease-in;
 }
 
@@ -85,6 +84,10 @@ body {
 
 .ml-10 {
   margin-left: 10px;
+}
+
+.mr-60 {
+  margin-right: 60px;
 }
 
 .align-center {
