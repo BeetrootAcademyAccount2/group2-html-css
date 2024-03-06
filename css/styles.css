@@ -17,8 +17,8 @@ body {
 }
 
 .main-content {
-  margin-left: 22%;
-  margin-right: 22%;
+  width: auto;
+  margin: 0 calc((100vh - 38vw));
   background-color: #d9d9d9;
 }
 
@@ -157,8 +157,6 @@ body {
   z-index: 2;
   width: 100%;
   height: 112px;
-  padding-top: 20px;
-  padding-bottom: 39px;
 }
 
 .paw-logo {
@@ -184,6 +182,8 @@ body {
 .main-nav li {
   font-family: "Saira", sans-serif;
   font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 39px;
 }
 
 .main-nav a,
