@@ -171,6 +171,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 39px;
 }
 .main-nav__flex {
   display: flex;
@@ -182,8 +184,6 @@ body {
 .main-nav li {
   font-family: "Saira", sans-serif;
   font-weight: 700;
-  padding-top: 20px;
-  padding-bottom: 39px;
 }
 
 .main-nav a,
