@@ -245,13 +245,6 @@ body {
 .footer__social-media .linkedin__icon {
   padding: 0 26px;
 }
-.footer__social-media .facebook__icon {
-  width: 48px;
-}
-.footer__social-media .linkedin__icon,
-.footer__social-media .instagram__icon {
-  width: 42px;
-}
 .footer__social-media .instagram__icon {
   padding-right: 23px;
 }
