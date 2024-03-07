@@ -17,8 +17,9 @@ body {
 }
 
 .main-content {
-  width: auto;
-  margin: 0 calc(100vh - 38vw);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 32px;
   background-color: #d9d9d9;
 }
 
