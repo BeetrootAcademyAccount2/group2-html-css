@@ -250,6 +250,8 @@ body {
   height: 100px;
   border: none;
   border-radius: 50px 0 0 50px;
+  -webkit-border-radius: 50px 0 0 50px;
+  -moz-border-radius: 50px 0 0 50px;
   background-color: #d9d9d9;
   bottom: 160px;
   right: 0;
@@ -261,6 +263,8 @@ body {
   top: calc(50% - 41px);
   left: 10px;
   animation: phoneBounce 2s infinite;
+  -webkit-animation: phoneBounce 2s infinite;
+  -moz-animation: phoneBounce 2s infinite;
 }
 
 @keyframes phoneBounce {
@@ -278,6 +282,30 @@ body {
     transform: translateY(-5px);
   }
 }
+@-webkit-keyframes phoneBounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-7px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+  }
+}
+
+@-moz-keyframes phoneBounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-7px);
+  }
+  60% {
+    -moz-transform: translateY(-5px);
+  }
+}
+
 
 /* FOOTER */
 .footer {
