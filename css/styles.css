@@ -207,6 +207,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .header h1 {
   font-family: "Sigmar One", sans-serif;
