@@ -1,0 +1,64 @@
+.paw-logo {
+  display: inline-block;
+}
+.menu-grid {
+  max-width: 1072px;
+  margin: 200px auto 100px;
+  background-color: #000000;
+  border-radius: 20px;
+  border: 12px solid #ffc0cb;
+  box-sizing: border-box;
+  padding: 60px;
+}
+.menu-grid__heading-title {
+  font-size: 128px;
+  color: #ffc0cb;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+.menu-grid__container {
+  display: grid;
+  grid-template-columns: repeat(2, 440px);
+  grid-template-rows: repeat(5, 300px);
+  gap: 60px;
+}
+.menu-grid__item {
+  position: relative;
+  border: 12px solid #ffc0cb;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu-grid__item:hover {
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #ffc0cb;
+}
+.menu-grid__item:hover .menu-grid__img {
+  transform: scale(1.05);
+}
+.menu-grid__item:hover .menu-grid__title {
+  text-shadow: 0 0 10px #ffc0cb;
+  transition: all 0.5s ease;
+}
+.menu-grid__title {
+  position: absolute;
+  color: #ffffff;
+  bottom: 15px;
+  left: 15px;
+  margin: 0;
+}
+.menu-grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 1s ease;
+}
+.menu-grid__item--main {
+  grid-row: 2 / 5;
+}
+.menu-grid__item--desserts {
+  grid-column: 1 / 3;
+  grid-row: 5;
+}
