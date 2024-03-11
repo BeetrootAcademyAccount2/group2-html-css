@@ -3,24 +3,27 @@
 }
 .menu-grid {
   max-width: 1072px;
-  margin: 200px auto 100px;
+  margin: 198px auto 77px;
   background-color: #000000;
   border-radius: 20px;
   border: 12px solid #ffc0cb;
   box-sizing: border-box;
-  padding: 60px;
+  
 }
 .menu-grid__heading-title {
   font-size: 128px;
   color: #ffc0cb;
-  margin-top: 0;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-left: 52px;
+  margin-bottom: 0;
+  line-height: 0.8;
 }
 .menu-grid__container {
   display: grid;
-  grid-template-columns: repeat(2, 440px);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 300px);
-  gap: 60px;
+  gap: 64px;
+  padding: 64px;
 }
 .menu-grid__item {
   position: relative;
