@@ -3,7 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/menu-styles.css" />
+    <title>Our Menu</title>
   </head>
-  <body></body>
+  <body>
+    <nav id="page-navigation" class="main-nav">
+      <ul>
+        <li>
+          <a href="../index.html"><img src="../assets/svg/paw-solid.svg" alt="paw-logo" class="paw-logo" /></a>
+        </li>
+        <div class="main-nav__flex">
+          <li><a href="../pages/about.html" class="f-s36">About us</a></li>
+          <li>
+            <a href="../pages/menu.html" class="f-s36">Menu</a>
+          </li>
+          <li>
+            <a href="../pages/application.html" class="f-s36">Careers</a>
+          </li>
+          <li>
+            <button class="primary-btn mr-60">
+              <a href="../pages/book-table.html" class="caps-text f-s32">Order now</a>
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <main class="menu-grid">
+      <h2 class="menu-grid__heading-title ff-italliano fw400">Our Menu</h2>
+      <div class="menu-grid__container">
+        <div class="menu-grid__item">
+          <img src="../assets/img/nonAlcoholicBeveragesIntro.jpg" alt="Non-Alcohol Drinks" class="menu-grid__img" />
+          <h3 class="menu-grid__title f-s64 ff-calibri fs-italic fw400">Non-Alcohol</h3>
+        </div>
+        <div class="menu-grid__item">
+          <img src="../assets/img/alchohol.png" alt="Alcohol Drinks" class="menu-grid__img" />
+          <h3 class="menu-grid__title f-s64 ff-calibri fs-italic fw400">Alcohol</h3>
+        </div>
+        <div class="menu-grid__item menu-grid__item--main">
+          <img src="../assets/img/main.jpg" alt="Food on plates" class="menu-grid__img" />
+          <h3 class="menu-grid__title f-s64 ff-calibri fs-italic fw400">Main</h3>
+        </div>
+        <div class="menu-grid__item">
+          <img src="../assets/img/Appetizer.jpg" alt="Appetizers" class="menu-grid__img" />
+          <h3 class="menu-grid__title f-s64 ff-calibri fs-italic fw400">Appetizers</h3>
+        </div>
+        <div class="menu-grid__item">
+          <img src="../assets/img/Salads.PNG" alt="Salads" class="menu-grid__img" />
+          <h3 class="menu-grid__title f-s64 ff-calibri fs-italic fw400">Salads</h3>
+        </div>
+        <div class="menu-grid__item">
+          <img src="../assets/img/sauses.jpeg" alt="Sauces" class="menu-grid__img" />
+          <h3 class="menu-grid__title f-s64 ff-calibri fs-italic fw400">Sauces</h3>
+        </div>
+        <div class="menu-grid__item menu-grid__item--desserts">
+          <img src="../assets/img/deserts.jpg" alt="Desserts" class="menu-grid__img" />
+          <h3 class="menu-grid__title f-s64 ff-calibri fs-italic fw400">Desserts</h3>
+        </div>
+      </div>
+    </main>
+    <aside class="fixed-phone">
+      <img class="fixed-phone__img" src="../assets/svg/phone-green-solid.svg" alt="Phone icon" />
+    </aside>
+    <footer id="footer" class="footer">
+      <span class="footer__copyright">&#169; All Rights Reserved 2023</span>
+      <section class="footer__social-media">
+        <a href=""><img src="../assets/svg/facebook.svg" alt="facebook-icon" class="facebook__icon footer__icon" /></a>
+        <a href=""><img src="../assets/svg/linkedin.svg" alt="linkedin-icon" class="linkedin__icon footer__icon" /></a>
+        <a href=""><img src="../assets/svg/instagram.svg" alt="instagram-icon" class="instagram__icon footer__icon" /></a>
+      </section>
+    </footer>
+  </body>
 </html>
