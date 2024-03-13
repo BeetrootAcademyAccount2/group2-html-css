@@ -21,7 +21,7 @@
   height: 43px;
 }
 
-.founder-section__p {
+.founder-section__description {
   width: 357px;
   height: 117px;
 }
@@ -38,20 +38,20 @@
 }
 
 .community-section__title {
-  width: 500px;
   height: 58px;
   text-align: left;
+  padding-right: 3px;
 }
 
-.community-section__p {
+.community-section__description {
   width: 414px;
   height: 148px;
   text-align: left;
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 .community-section__img {
   width: 492px;
   height: 380px;
-  opacity: 0.8px;
+  opacity: 0.8;
 }
