@@ -1,0 +1,57 @@
+.paw-logo {
+  display: inline-block;
+}
+
+.main-content {
+  padding: 208px 92px 320px;
+}
+
+.founder-section {
+  display: flex;
+  flex-flow: row;
+}
+
+.founder-section__text {
+  margin-left: 57px;
+  text-align: center;
+}
+
+.founder-section__title {
+  width: 354px;
+  height: 43px;
+}
+
+.founder-section__description {
+  width: 357px;
+  height: 117px;
+}
+
+.founder-section__img {
+  width: 524px;
+  height: 296px;
+}
+
+.community-section {
+  display: flex;
+  flex-flow: row;
+  padding-top: 183px;
+}
+
+.community-section__title {
+  height: 58px;
+  text-align: left;
+  padding-right: 3px;
+}
+
+.community-section__description {
+  width: 414px;
+  height: 148px;
+  text-align: left;
+  margin-right: 28px;
+}
+
+.community-section__img {
+  width: 492px;
+  height: 380px;
+  opacity: 0.8;
+}
