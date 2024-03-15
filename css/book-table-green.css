@@ -1,0 +1,30 @@
+.paw-logo {
+  display: inline-block;
+}
+
+.booking-confirmation__img {
+  width: 128px;
+}
+
+.booking-confirmation__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 512px auto 526px;
+}
+
+.booking-confirmation__title {
+  width: 423px;
+  height: 33px;
+  color: #00ff88;
+  margin-bottom: 0px; /* It was giving 16px mb by default, don't know why */
+}
+
+.booking-confirmation__home-link {
+  width: 374px;
+  height: 37px;
+  line-height: 41px;
+  color: #00ff88;
+  text-decoration: underline;
+}
