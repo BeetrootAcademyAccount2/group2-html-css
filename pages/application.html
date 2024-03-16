@@ -4,6 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/application-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <nav id="page-navigation" class="main-nav">
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><img
+              src="../assets/svg/paw-solid.svg"
+              alt="paw-logo"
+              class="paw-logo"
+          /></a>
+        </li>
+        <div class="main-nav__flex">
+          <li><a href="about.html" class="f-s36">About us</a></li>
+          <li>
+            <a href="menu.html" class="f-s36">Menu</a>
+          </li>
+          <li>
+            <a href="application.html" class="f-s36">Careers</a>
+          </li>
+          <li>
+            <button class="primary-btn mr-60">
+              <a href="book-table.html" class="caps-text f-s32">Order now</a>
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="grid-container">
+      <form class="form-applicaion">
+        <h3 class="form-application-title">Job Application</h3>
+        <label for="firstname" class="form-applicaion-labelfirstname"
+          >First Name</label
+        >
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          class="form-applicaion-firstname"
+        />
+        <label for="lastname" class="form-applicaion-labelastname"
+          >Last Name</label
+        >
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          class="form-applicaion-lastname"
+        />
+        <label for="email" class="form-applicaion-labelemail">Email</label>
+        <input type="email" id="email" class="form-application-email" />
+        <label for="jobrole" class="form-applicaion-labeljobrole"
+          >Job Role</label
+        >
+        <label class="dropicon">
+          <select name="jobrole" id="jobrole" class="form-applicaion-jobrole">
+            <option value="waiter" selected>Waiter</option>
+            <option value="manager">Manager</option>
+            <option value="cheaf">Cheaf</option>
+          </select>
+        </label>
+        <label for="address" class="form-applicaion-labeladdress"
+          >Enter Address</label
+        >
+        <textarea
+          name="address"
+          id="address"
+          class="form-applicaion-address"
+        ></textarea>
+        <label for="cvfile" class="form-applicaion-cvlabel"
+          >Upload Your CV</label
+        >
+        <div class="form-application-cvfile">
+          <input
+            type="button"
+            id="cvfile"
+            name="cvfile"
+            name="Escolher Ficheiros"
+            value="Choose File"
+            class="form-application-cvfile-button"
+            multiple/>
+            <span class="form-application-cvfiletext">No file choosen</span>
+        </div>
+        <button type="button" class="form-applicaion-button">Apply Now</button>
+      </form>
+    </div>
+    <footer id="footer" class="footer">
+      <span class="footer__copyright">&#169; All Rights Reserved 2023</span>
+      <section class="footer__social-media">
+        <a href=""
+          ><img
+            src="../assets/svg/facebook.svg"
+            alt="facebook-icon"
+            class="facebook__icon footer__icon"
+        /></a>
+        <a href=""
+          ><img
+            src="../assets/svg/linkedin.svg"
+            alt="linkedin-icon"
+            class="linkedin__icon footer__icon"
+        /></a>
+        <a href=""
+          ><img
+            src="../assets/svg/instagram.svg"
+            alt="instagram-icon"
+            class="instagram__icon footer__icon"
+        /></a>
+      </section>
+    </footer>
+  </body>
 </html>

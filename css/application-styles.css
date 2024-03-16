@@ -1,0 +1,226 @@
+.main-nav {
+  position: static;
+}
+
+.paw-logo {
+  display: inline-block;
+}
+
+/* INPUTS AND LABELS STYLES START */
+input {
+  width:460px;
+  height: 64px;
+  border: 1px solid #D2D2D2;
+  border-radius: 3px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: Arial;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+  text-align: left;
+}
+
+/* INPUTS AND LABELS STYLES END */
+
+.grid-container {
+  height: 1012px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-applicaion {
+  background: #FFC0CB;
+  border: 1px solid #EDDEDE;
+  border-radius: 12px; 
+  padding: 60px 0 100px 70px;   
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'title title'
+                        'labelfirst labelast'
+                        'firstName lastname'
+                        'labelemail labeljobrole'
+                        'email jobrole'
+                        'labeladdress .'
+                        'address address'
+                        'cvlabel .'
+                        'cv . '
+                        'sendForm sendForm';
+  height: 80%;
+}
+
+.form-application-title {
+  grid-area: title;
+  font-family: Arial;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.form-applicaion-labelfirstname {
+  grid-area: labelfirst;
+}
+
+.form-applicaion-firstname {
+  grid-area: firstName;
+}
+
+.form-applicaion-labelastname {
+  grid-area: labelast;
+}
+
+.form-applicaion-lastname {
+  grid-area: lastname;
+}
+
+.form-applicaion-labelemail{
+ grid-area: labelemail; 
+}
+
+.form-applicaion-email {
+  grid-area: email;
+}
+
+.form-applicaion-labelfirstname, 
+.form-applicaion-labelastname,
+.form-applicaion-labelemail,
+.form-applicaion-labeladdress,
+.form-applicaion-labeljobrole {
+  align-self: end;
+}
+/* JOB STYLE START */
+
+/* ARROW ON SELECT ELEMENT*/
+
+.dropicon {
+  overflow: hidden;     
+  position: relative;
+}
+
+.dropicon:after{
+  content:"\f078 ";
+  font-family: FontAwesome;
+  position: absolute; 
+  right: 162px; 
+  top: 10px;
+  width: 44px;
+  height: 22px;  
+}
+
+.form-applicaion-labeljobrole {
+  grid-area: labeljobrole;
+}
+
+.form-applicaion-jobrole {
+  grid-area: jobrole;
+  width: 460px;
+  height: 64px;
+  padding: 0 15px;
+  border-radius: 3px;   
+  border: 1px solid #D2D2D2; 
+  appearance: none;
+}
+
+option {
+  font-family: Calibri;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+/* JOB STYLES END  */
+
+/*TEXTAREA STYLE*/
+.form-applicaion-labeladdress {
+  grid-area: labeladdress;
+}
+
+.form-applicaion-address {
+  grid-area: address;
+  width: 936px; 
+  height: 222px; 
+  border-radius: 3px;
+  border: 1px solid #D2D2D2;
+  padding: 8px; 
+  resize: none;
+  margin-bottom: 15px;
+}
+/* text area style end */
+
+/* CV STYLES START */
+.form-applicaion-cvlabel {
+  grid-area: cvlabel;
+}
+
+.form-application-cvfile {
+  grid-area: cv;
+  display: flex;
+  align-items: flex-end;
+  width: 484px;
+  height: 57px;   
+  background: rgba(255, 255, 255, 1);
+  padding-right: 15px;
+  gap: 8px;
+  margin-bottom: 45px;
+}
+
+.form-application-cvfile-button {
+  height: inherit;
+  width: 248px;
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  border-right: none;
+  border-radius: 0;
+  margin: 0;
+
+}
+.form-application-cvfiletext {
+  font-family: Calibri;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  color: rgba(120, 118, 118, 1);
+  background: rgba(255, 255, 255, 1);
+}
+/*  CV STYLES END */
+
+/* BUTTON FOR SUBMITING THE FORM STYLES START  */
+.form-applicaion-button {
+  grid-area: sendForm;
+  width: 548px;
+  height: 58px;
+  justify-self: center;
+  font-family: Calibri;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  background-color:rgba(27, 82, 223, 1);
+  color:rgba(255, 254, 254, 1);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 4px 9px #080808;
+}
+
+.form-applicaion-button:hover {background-color: #32527B}
+
+.form-applicaion-button:active {
+  box-shadow: 4px 4px 6px rgba(14, 13, 13, 30);
+  transform: translateY(4px);
+}
+
+/* BUTTON FOR SUBMITING THE FORM STYLES END */
+
+
+
+
+
+
