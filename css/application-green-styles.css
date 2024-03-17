@@ -1,0 +1,23 @@
+.paw-logo {
+  display: inline-block;
+}
+
+.main-nav {
+  position: static;
+}
+
+.submission-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p,a {
+  font-family: Arial;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+  color: rgba(0, 255, 136, 1);
+}

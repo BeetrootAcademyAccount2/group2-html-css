@@ -208,6 +208,10 @@ option {
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 4px 9px #080808;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-applicaion-button:hover {background-color: #32527B}
