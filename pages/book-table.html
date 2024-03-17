@@ -46,41 +46,68 @@
         </div>
       </ul>
     </nav>
-    <header></header>
     <main>
       <section class="book-table">
         <h1 class="book-table__title ff-arial f-s40 fw700">Book Table</h1>
-        <form class="book-table__form">
-          <label class="ff-arial f-s36 fw400" for="first name"
-            >First Name</label
-          >
-          <input
-            class="book-table__input-firstname"
-            type="text"
-            name="first name"
-          />
-          <label class="ff-arial f-s36 fw400" for="last name">Last Name</label>
-          <input
-            class="book-table__input-lastname"
-            type="text"
-            name="last name"
-          />
-          <label class="ff-arial f-s36 fw400" for="email">Email</label>
-          <input class="book-table__input-email" type="email" name="email" />
-          <label class="ff-arial f-s36 fw400" for="phone">Phone</label>
-          <input class="book-table__input-phone" type="tel" name="phone" />
-        </form>
-        <div class="book-table__textarea">
-          <label class="ff-arial f-s36 fw400" for="text box"
-            >Additional Notes</label
-          >
-          <textarea name="Notes" id="" cols="30" rows="10"></textarea>
-        </div>
-        <a href="./book-table-green.html"
-          ><button class="book-table__button ff-calibri f-s30 fw400" type="submit">
-            Book Table
-          </button></a
+        <form
+          class="book-table__form"
+          method="GET"
+          action="../pages/book-table-green.html"
         >
+          <div class="book-table__grid">
+            <label class="ff-arial f-s36 fw400" for="first-name"
+              >First Name</label
+            >
+            <input
+              class="book-table__input-firstname f-arial f-s32 fw400"
+              type="text"
+              name="first-name"
+            />
+            <label class="ff-arial f-s36 fw400" for="last-name"
+              >Last Name</label
+            >
+            <input
+              class="book-table__input-lastname ff-arial f-s32 fw400"
+              type="text"
+              name="las-name"
+            />
+            <label class="ff-arial f-s36 fw400" for="email">Email</label>
+            <input
+              class="book-table__input-email f-arial f-s32 fw400"
+              type="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+            <label class="ff-arial f-s36 fw400" for="phone">Phone</label>
+            <input
+              class="book-table__input-phone f-arial f-s32 fw400"
+              type="tel"
+              name="phone"
+              pattern="[0-9]{9}"
+            />
+          </div>
+          <div class="book-table__textarea">
+            <label class="ff-arial f-s36 fw400" for="text-box"
+              >Additional Notes</label
+            >
+            <textarea
+              class="f-arial f-s32 fw400"
+              name="notes"
+              id="notes"
+              cols="30"
+              rows="10"
+              maxlength="200"
+            ></textarea>
+          </div>
+          <a href="./book-table-green.html"
+            ><button
+              class="book-table__button ff-calibri f-s30 fw400"
+              type="submit"
+            >
+              Book Table
+            </button></a
+          >
+        </form>
       </section>
     </main>
     <footer id="footer" class="footer">

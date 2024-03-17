@@ -16,7 +16,7 @@
   box-shadow: 1px 1px #eddede;
 }
 
-.book-table__form {
+.book-table__grid {
   display: grid;
   grid-template-columns: repeat(2, 460px);
   grid-template-rows: repeat(4, 1fr);
@@ -44,6 +44,11 @@ label {
 input {
   border: none;
   height: 64px;
+  color: rgb(76, 75, 75);
+}
+
+input:invalid{
+  border: 2px solid red;
 }
 
 input:focus,
