@@ -2,22 +2,25 @@
   display: inline-block;
 }
 
-.main-nav {
-  position: static;
-}
-
-.submission-container {
+.successfully-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 461px 0;
 }
 
-p,a {
-  font-family: Arial;
-  font-size: 36px;
-  font-weight: 400;
+ .successfully-paragraph, .successfully-link{
   line-height: 41px;
   color: rgba(0, 255, 136, 1);
+}
+
+.successfully-paragraph {
+  margin-bottom: 10px;
+}
+
+.successfully-image {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 16px;
 }
