@@ -1,45 +1,40 @@
-.main-nav {
-  position: static;
-}
-
 .paw-logo {
   display: inline-block;
 }
 
+body {
+  align-items: center;
+}
+
 /* INPUTS AND LABELS STYLES START */
 input {
-  width:460px;
+  width:480px;
   height: 64px;
   border: 1px solid #D2D2D2;
   border-radius: 3px;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 label {
-  font-family: Arial;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 41px;
-  text-align: left;
 }
 
 /* INPUTS AND LABELS STYLES END */
 
-.grid-container {
+.form-container {
+  width:1120px;
   height: 1012px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 192px 0;
 }
 
 .form-applicaion {
   background: #FFC0CB;
   border: 1px solid #EDDEDE;
   border-radius: 12px; 
-  padding: 60px 0 100px 70px;   
+  padding: 50px 80px 100px 80px;   
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
   grid-template-areas: 'title title'
                         'labelfirst labelast'
@@ -51,15 +46,12 @@ label {
                         'cvlabel .'
                         'cv . '
                         'sendForm sendForm';
-  height: 80%;
+
 }
 
 .form-application-title {
   grid-area: title;
-  font-family: Arial;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 46px;
+  margin: 0 0 40px 0;
 }
 
 .form-applicaion-labelfirstname {
@@ -86,31 +78,9 @@ label {
   grid-area: email;
 }
 
-.form-applicaion-labelfirstname, 
-.form-applicaion-labelastname,
-.form-applicaion-labelemail,
-.form-applicaion-labeladdress,
-.form-applicaion-labeljobrole {
-  align-self: end;
-}
 /* JOB STYLE START */
 
-/* ARROW ON SELECT ELEMENT*/
-
-.dropicon {
-  overflow: hidden;     
-  position: relative;
-}
-
-.dropicon:after{
-  content:"\f078 ";
-  font-family: FontAwesome;
-  position: absolute; 
-  right: 162px; 
-  top: 10px;
-  width: 44px;
-  height: 22px;  
-}
+/* SELECT ELEMENT*/
 
 .form-applicaion-labeljobrole {
   grid-area: labeljobrole;
@@ -124,13 +94,11 @@ label {
   border-radius: 3px;   
   border: 1px solid #D2D2D2; 
   appearance: none;
-}
-
-option {
-  font-family: Calibri;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 44px;
+  background-image: url(/assets/svg/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  
 }
 
 /* JOB STYLES END  */
@@ -148,13 +116,14 @@ option {
   border: 1px solid #D2D2D2;
   padding: 8px; 
   resize: none;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 /* text area style end */
 
 /* CV STYLES START */
 .form-applicaion-cvlabel {
   grid-area: cvlabel;
+  margin-bottom: 10px;
 }
 
 .form-application-cvfile {
@@ -174,22 +143,18 @@ option {
   width: 248px;
   border: 0.5px solid rgba(0, 0, 0, 1);
   font-family: Inter;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 44px;
-  border-right: none;
   border-radius: 0;
   margin: 0;
-
+  
 }
+
 .form-application-cvfiletext {
-  font-family: Calibri;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 44px;
   color: rgba(120, 118, 118, 1);
   background: rgba(255, 255, 255, 1);
 }
+
 /*  CV STYLES END */
 
 /* BUTTON FOR SUBMITING THE FORM STYLES START  */
@@ -198,9 +163,6 @@ option {
   width: 548px;
   height: 58px;
   justify-self: center;
-  font-family: Calibri;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 44px;
   background-color:rgba(27, 82, 223, 1);
   color:rgba(255, 254, 254, 1);
@@ -208,7 +170,11 @@ option {
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 4px 9px #080808;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+ }
 
 .form-applicaion-button:hover {background-color: #32527B}
 

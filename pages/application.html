@@ -3,14 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Careers</title>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/application-styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
     <nav id="page-navigation" class="main-nav">
@@ -39,10 +35,11 @@
         </div>
       </ul>
     </nav>
-    <div class="grid-container">
-      <form class="form-applicaion">
-        <h3 class="form-application-title">Job Application</h3>
-        <label for="firstname" class="form-applicaion-labelfirstname"
+    <section class="form-container">
+      <form class="form-applicaion" method="GET"
+      action="/application-green.html">
+        <h3 class="form-application-title ff-arial f-s40 fw700 lh-46">Job Application</h3>
+        <label for="firstname" class="form-applicaion-labelfirstname ff-arial f-s36 fw400"
           >First Name</label
         >
         <input
@@ -51,7 +48,7 @@
           name="firstname"
           class="form-applicaion-firstname"
         />
-        <label for="lastname" class="form-applicaion-labelastname"
+        <label for="lastname" class="form-applicaion-labelastname ff-arial f-s36 fw400"
           >Last Name</label
         >
         <input
@@ -60,19 +57,19 @@
           name="lastname"
           class="form-applicaion-lastname"
         />
-        <label for="email" class="form-applicaion-labelemail">Email</label>
+        <label for="email" class="form-applicaion-labelemail ff-arial f-s36 fw400">Email</label>
         <input type="email" id="email" class="form-application-email" />
-        <label for="jobrole" class="form-applicaion-labeljobrole"
+        <label for="jobrole" class="form-applicaion-labeljobrole ff-arial f-s36 fw400"
           >Job Role</label
         >
         <label class="dropicon">
-          <select name="jobrole" id="jobrole" class="form-applicaion-jobrole">
+          <select name="jobrole" id="jobrole" class="form-applicaion-jobrole ff-calibri f-s36 fw400">
             <option value="waiter" selected>Waiter</option>
             <option value="manager">Manager</option>
             <option value="cheaf">Cheaf</option>
           </select>
         </label>
-        <label for="address" class="form-applicaion-labeladdress"
+        <label for="address" class="form-applicaion-labeladdress ff-arial f-s36 fw400"
           >Enter Address</label
         >
         <textarea
@@ -80,7 +77,7 @@
           id="address"
           class="form-applicaion-address"
         ></textarea>
-        <label for="cvfile" class="form-applicaion-cvlabel"
+        <label for="cvfile" class="form-applicaion-cvlabel ff-arial f-s36 fw400"
           >Upload Your CV</label
         >
         <div class="form-application-cvfile">
@@ -90,13 +87,13 @@
             name="cvfile"
             name="Escolher Ficheiros"
             value="Choose File"
-            class="form-application-cvfile-button"
+            class="form-application-cvfile-button fw400 f-s36"
             multiple/>
-            <span class="form-application-cvfiletext">No file choosen</span>
+            <span class="form-application-cvfiletext ff-calibri f-s36 fw400">No file choosen</span>
         </div>
-        <button type="button" class="form-applicaion-button">Apply Now</button>
+        <a href="application-green.html" class="form-applicaion-button ff-calibri f-s36 fw400">Apply Now</a>
       </form>
-    </div>
+    </section>
     <footer id="footer" class="footer">
       <span class="footer__copyright">&#169; All Rights Reserved 2023</span>
       <section class="footer__social-media">
