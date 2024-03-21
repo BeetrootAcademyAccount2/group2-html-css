@@ -8,7 +8,7 @@ body {
 
 /* INPUTS AND LABELS STYLES START */
 input {
-  width:480px;
+  width:460px;
   height: 64px;
   border: 1px solid #D2D2D2;
   border-radius: 3px;
@@ -98,7 +98,6 @@ label {
   background-image: url(/assets/svg/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: 85% center;
-  
 }
 
 /* JOB STYLES END  */
