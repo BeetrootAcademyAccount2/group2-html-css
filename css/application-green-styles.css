@@ -2,7 +2,7 @@
   display: inline-block;
 }
 
-.successfully-container {
+.successfully__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,16 +10,16 @@
   margin: 461px 0;
 }
 
- .successfully-paragraph, .successfully-link{
+ .successfully__paragraph, .successfully__link{
   line-height: 41px;
   color: rgba(0, 255, 136, 1);
 }
 
-.successfully-paragraph {
+.successfully__paragraph {
   margin-bottom: 10px;
 }
 
-.successfully-image {
+.successfully__image {
   width: 128px;
   height: 128px;
   margin-bottom: 16px;
