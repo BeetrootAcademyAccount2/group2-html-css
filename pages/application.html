@@ -36,62 +36,92 @@
       </ul>
     </nav>
     <section class="form-container">
-      <form class="form-applicaion" method="GET"
-      action="/application-green.html">
-        <h3 class="form-application-title ff-arial f-s40 fw700 lh-46">Job Application</h3>
-        <label for="firstname" class="form-applicaion-labelfirstname ff-arial f-s36 fw400"
+      <form
+        class="form-applicaion"
+        method="GET"
+        action="/application-green.html"
+      >
+        <h3 class="form-application__title ff-arial f-s40 fw700 lh-46">
+          Job Application
+        </h3>
+        <label
+          for="firstname"
+          class="form-applicaion__labelfirstname ff-arial f-s36 fw400"
           >First Name</label
         >
         <input
           type="text"
           id="firstname"
           name="firstname"
-          class="form-applicaion-firstname"
+          class="form-applicaion__firstname f-s32"
         />
-        <label for="lastname" class="form-applicaion-labelastname ff-arial f-s36 fw400"
+        <label
+          for="lastname"
+          class="form-applicaion__labelastname ff-arial f-s36 fw400"
           >Last Name</label
         >
         <input
           type="text"
           id="lastname"
           name="lastname"
-          class="form-applicaion-lastname"
+          class="form-applicaion__lastname f-s32"
         />
-        <label for="email" class="form-applicaion-labelemail ff-arial f-s36 fw400">Email</label>
-        <input type="email" id="email" class="form-application-email" />
-        <label for="jobrole" class="form-applicaion-labeljobrole ff-arial f-s36 fw400"
+        <label
+          for="email"
+          class="form-applicaion__labelemail ff-arial f-s36 fw400"
+          >Email</label
+        >
+        <input type="email" id="email" class="form-application__email f-s32" />
+        <label
+          for="jobrole"
+          class="form-applicaion__labeljobrole ff-arial f-s36 fw400"
           >Job Role</label
         >
         <label class="dropicon">
-          <select name="jobrole" id="jobrole" class="form-applicaion-jobrole ff-calibri f-s36 fw400">
+          <select
+            name="jobrole"
+            id="jobrole"
+            class="form-applicaion__jobrole ff-calibri f-s36 fw400"
+          >
             <option value="waiter" selected>Waiter</option>
             <option value="manager">Manager</option>
             <option value="cheaf">Cheaf</option>
           </select>
         </label>
-        <label for="address" class="form-applicaion-labeladdress ff-arial f-s36 fw400"
+        <label
+          for="address"
+          class="form-applicaion__labeladdress ff-arial f-s36 fw400"
           >Enter Address</label
         >
         <textarea
           name="address"
           id="address"
-          class="form-applicaion-address"
+          class="form-applicaion__address f-s32"
         ></textarea>
-        <label for="cvfile" class="form-applicaion-cvlabel ff-arial f-s36 fw400"
+        <label
+          for="cvfile"
+          class="form-applicaion__cvlabel ff-arial f-s36 fw400"
           >Upload Your CV</label
         >
-        <div class="form-application-cvfile">
+        <div class="form-application__cvfile">
           <input
             type="button"
             id="cvfile"
             name="cvfile"
             name="Escolher Ficheiros"
             value="Choose File"
-            class="form-application-cvfile-button fw400 f-s36"
-            multiple/>
-            <span class="form-application-cvfiletext ff-calibri f-s36 fw400">No file choosen</span>
+            class="form-application__cvfile__button fw400 f-s36"
+            multiple
+          />
+          <span class="form-application-cvfiletext ff-calibri f-s36 fw400"
+            >No file choosen</span
+          >
         </div>
-        <a href="application-green.html" class="form-applicaion-button ff-calibri f-s36 fw400">Apply Now</a>
+        <a
+          href="application-green.html"
+          class="form-applicaion__button ff-calibri f-s36 fw400"
+          >Apply Now</a
+        >
       </form>
     </section>
     <footer id="footer" class="footer">
