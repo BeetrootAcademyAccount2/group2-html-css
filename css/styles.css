@@ -258,17 +258,38 @@ body {
 /* Fixed Phone */
 .fixed-phone {
   position: fixed;
-  width: 180px;
+  width: 25px;
   height: 100px;
-  border: none;
+  border: 1px solid #ffffff;
   border-radius: 50px 0 0 50px;
   -webkit-border-radius: 50px 0 0 50px;
   -moz-border-radius: 50px 0 0 50px;
   background-color: #d9d9d9;
   bottom: 160px;
   right: 0;
+  transition: width 0.3s;
+}
+.fixed-phone:hover .fixed-phone__img {
+  opacity: 1;
+}
+.fixed-phone:hover .fa-angles-left {
+  opacity: 0;
+}
+.fa-angles-left {
+  position: absolute;
+  color: #00ff00;
+  top: calc(50% - 10px);
+  left: 7px;
+  animation: arrowMove 2s infinite;
+  -webkit-animation: arrowMove 2s infinite;
+  -moz-animation: arrowMove 2s infinite;
+}
+.fixed-phone:hover {
+  width: 180px;
+  transition: width 0.5s ease;
 }
 .fixed-phone__img {
+  opacity: 0;
   cursor: pointer;
   position: absolute;
   z-index: 1;
@@ -315,6 +336,32 @@ body {
   }
   60% {
     -moz-transform: translateY(-5px);
+  }
+}
+
+@keyframes arrowMove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
+@-webkit-keyframes arrowMove {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+  }
+}
+
+@-moz-keyframes arrowMove {
+  0%, 100% {
+    -moz-transform: translateX(0);
+  }
+  50% {
+    -moz-transform: translateX(-5px);
   }
 }
 
