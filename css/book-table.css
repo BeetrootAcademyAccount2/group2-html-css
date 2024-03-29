@@ -47,7 +47,7 @@ input {
   color: rgb(76, 75, 75);
 }
 
-input:invalid{
+input:invalid {
   border: 2px solid red;
 }
 
@@ -72,16 +72,21 @@ textarea:focus {
 .book-table__button {
   width: 552px;
   height: 58px;
-  background-color: #1b52df;
-  color: #fffefe;
-  border-radius: 3px;
-  border: none;
   line-height: 44px;
-  text-align: center;
-  margin: 48px 284px 114px;
+  background-color: rgba(27, 82, 223, 1);
+  color: rgba(255, 254, 254, 1);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 4px 9px #080808;
+  margin: 40px 280px 114px;
 }
 
 .book-table__button:hover {
-  transform: scale(1.05);
-  background-color: #295bd9;
+  background-color: #32527b;
+}
+
+.book-table__button:active {
+  box-shadow: 4px 4px 6px rgba(14, 13, 13, 30);
+  transform: translateY(4px);
 }
