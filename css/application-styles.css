@@ -1,9 +1,9 @@
-.main-nav {
-  position: static;
-}
-
 .paw-logo {
   display: inline-block;
+}
+
+body {
+  align-items: center;
 }
 
 /* INPUTS AND LABELS STYLES START */
@@ -13,33 +13,33 @@ input {
   border: 1px solid #D2D2D2;
   border-radius: 3px;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
+input:invalid {
+  border: 2px solid red;
+}
+
+
 label {
-  font-family: Arial;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 41px;
-  text-align: left;
 }
 
 /* INPUTS AND LABELS STYLES END */
 
-.grid-container {
+.form-container {
+  width:1120px;
   height: 1012px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 192px 0;
 }
 
 .form-applicaion {
   background: #FFC0CB;
   border: 1px solid #EDDEDE;
   border-radius: 12px; 
-  padding: 60px 0 100px 70px;   
+  padding: 50px 80px 100px 80px;   
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
   grid-template-areas: 'title title'
                         'labelfirst labelast'
@@ -51,72 +51,51 @@ label {
                         'cvlabel .'
                         'cv . '
                         'sendForm sendForm';
-  height: 80%;
+
 }
 
-.form-application-title {
+.form-application__title {
   grid-area: title;
-  font-family: Arial;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 46px;
+  margin: 0 0 40px 0;
 }
 
-.form-applicaion-labelfirstname {
+.form-applicaion__labelfirstname {
   grid-area: labelfirst;
 }
 
-.form-applicaion-firstname {
+.form-applicaion__firstname {
   grid-area: firstName;
 }
 
-.form-applicaion-labelastname {
+.form-applicaion__labelastname {
   grid-area: labelast;
 }
 
-.form-applicaion-lastname {
+.form-applicaion__lastname {
   grid-area: lastname;
 }
 
-.form-applicaion-labelemail{
+.form-applicaion__labelemail{
  grid-area: labelemail; 
 }
 
-.form-applicaion-email {
+.form-applicaion__email {
   grid-area: email;
 }
 
-.form-applicaion-labelfirstname, 
-.form-applicaion-labelastname,
-.form-applicaion-labelemail,
-.form-applicaion-labeladdress,
-.form-applicaion-labeljobrole {
-  align-self: end;
+input,textarea:focus {
+  background-color: #fff2f4;
 }
+
 /* JOB STYLE START */
 
-/* ARROW ON SELECT ELEMENT*/
+/* SELECT ELEMENT*/
 
-.dropicon {
-  overflow: hidden;     
-  position: relative;
-}
-
-.dropicon:after{
-  content:"\f078 ";
-  font-family: FontAwesome;
-  position: absolute; 
-  right: 162px; 
-  top: 10px;
-  width: 44px;
-  height: 22px;  
-}
-
-.form-applicaion-labeljobrole {
+.form-applicaion__labeljobrole {
   grid-area: labeljobrole;
 }
 
-.form-applicaion-jobrole {
+.form-applicaion__jobrole {
   grid-area: jobrole;
   width: 460px;
   height: 64px;
@@ -124,23 +103,20 @@ label {
   border-radius: 3px;   
   border: 1px solid #D2D2D2; 
   appearance: none;
-}
-
-option {
-  font-family: Calibri;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 44px;
+  background-image: url(/assets/svg/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 85% center;
 }
 
 /* JOB STYLES END  */
 
 /*TEXTAREA STYLE*/
-.form-applicaion-labeladdress {
+.form-applicaion__labeladdress {
   grid-area: labeladdress;
 }
 
-.form-applicaion-address {
+.form-applicaion__address {
   grid-area: address;
   width: 936px; 
   height: 222px; 
@@ -148,16 +124,19 @@ option {
   border: 1px solid #D2D2D2;
   padding: 8px; 
   resize: none;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
+
+
 /* text area style end */
 
 /* CV STYLES START */
-.form-applicaion-cvlabel {
+.form-applicaion__cvlabel {
   grid-area: cvlabel;
+  margin-bottom: 10px;
 }
 
-.form-application-cvfile {
+.form-application__cvfile {
   grid-area: cv;
   display: flex;
   align-items: flex-end;
@@ -169,38 +148,31 @@ option {
   margin-bottom: 45px;
 }
 
-.form-application-cvfile-button {
+.form-application__cvfile__button {
   height: inherit;
   width: 248px;
   border: 0.5px solid rgba(0, 0, 0, 1);
   font-family: Inter;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 44px;
-  border-right: none;
   border-radius: 0;
   margin: 0;
-
+  
 }
-.form-application-cvfiletext {
-  font-family: Calibri;
-  font-size: 36px;
-  font-weight: 400;
+
+.form-application__cvfiletext {
   line-height: 44px;
   color: rgba(120, 118, 118, 1);
   background: rgba(255, 255, 255, 1);
 }
+
 /*  CV STYLES END */
 
 /* BUTTON FOR SUBMITING THE FORM STYLES START  */
-.form-applicaion-button {
+.form-applicaion__button {
   grid-area: sendForm;
   width: 548px;
   height: 58px;
   justify-self: center;
-  font-family: Calibri;
-  font-size: 36px;
-  font-weight: 400;
   line-height: 44px;
   background-color:rgba(27, 82, 223, 1);
   color:rgba(255, 254, 254, 1);
@@ -213,10 +185,15 @@ option {
   justify-content: center;
   align-items: center;
 }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+ }
 
-.form-applicaion-button:hover {background-color: #32527B}
+.form-applicaion__button:hover {background-color: #32527B}
 
-.form-applicaion-button:active {
+.form-applicaion__button:active {
   box-shadow: 4px 4px 6px rgba(14, 13, 13, 30);
   transform: translateY(4px);
 }
