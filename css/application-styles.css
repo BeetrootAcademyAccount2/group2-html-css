@@ -183,8 +183,7 @@ input,textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-
- }
+}
 
 .form-applicaion__button:hover {background-color: #32527B}
 
