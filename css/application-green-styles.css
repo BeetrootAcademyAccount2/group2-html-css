@@ -1,0 +1,26 @@
+.paw-logo {
+  display: inline-block;
+}
+
+.successfully__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 461px 0;
+}
+
+ .successfully__paragraph, .successfully__link{
+  line-height: 41px;
+  color: rgba(0, 255, 136, 1);
+}
+
+.successfully__paragraph {
+  margin-bottom: 10px;
+}
+
+.successfully__image {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 16px;
+}

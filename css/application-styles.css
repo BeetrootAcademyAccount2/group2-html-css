@@ -156,7 +156,6 @@ input,textarea:focus {
   line-height: 44px;
   border-radius: 0;
   margin: 0;
-  
 }
 
 .form-application__cvfiletext {
@@ -180,11 +179,11 @@ input,textarea:focus {
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 4px 9px #080808;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
- }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .form-applicaion__button:hover {background-color: #32527B}
 
